@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Insert User's Email Address"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAddAccount"
+        android:layout_alignBottom="@+id/txtBoxAddAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
+    <EditText
+        android:id="@+id/txtBoxAddAccount"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:layout_marginBottom="76dp"
+        android:layout_alignBottom="@+id/btnAddAccSend"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnAddAccSend"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#00a65a"
+        android:text="SEND"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lblTextFirtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Enter First Name: "
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/lblTextFirtName"
+        android:layout_alignLeft="@+id/inputLastName"
+        android:layout_alignStart="@+id/inputLastName" />
+
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/lblAddAccount"
+        android:layout_alignEnd="@+id/lblAddAccount" />
+
+    <TextView
+        android:id="@+id/lblTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Last Name:"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/inputLastName"
+        android:layout_alignLeft="@+id/lblTextFirtName"
+        android:layout_alignStart="@+id/lblTextFirtName"
+        android:layout_marginBottom="58dp" />
+</RelativeLayout>

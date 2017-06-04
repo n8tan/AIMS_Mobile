@@ -1,0 +1,64 @@
+<resources>
+    <!--System Labels -->
+    <string name="app_name">A.I.M.S.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="menu_option_view_all_items">View All Items</string>
+    <string name="menu_option_search_item">Search Item</string>
+    <string name="menu_option_scan_item">Scan Item</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_scan_item">Scan</string>
+    <string name="title_open_drawer">Options</string>
+    <string name="title_closed_drawer">Main Menu</string>
+    <string name="scan_prompt">Scan Barcode</string>
+    <string name="login_title">Login</string>
+    <string name="menu_option_view_item">View Item</string>
+    <string-array name="item_list">
+        <item>View All Items</item>
+        <item>Scan Item</item>
+        <item>Approve RF Form</item>
+        <item>Add Account</item>
+        <item>Delete Account</item>
+        <item>Reset Password</item>
+    </string-array>
+    <string-array name="staff_item_list">
+        <item>View All Items</item>
+        <item>Scan Item</item>
+    </string-array>
+    <!--System Colors -->
+    <string name="action_bar_color">#014FB3</string>
+    <string-array name="status_colors">
+        <item>#dd4b39</item>
+        <item>#00a65a</item>
+        <item>#f39c12</item>
+        <item>#00c0ef</item>
+    </string-array>
+
+    <!--System Account Information -->
+    <string name="default_username">bryce27923@gmail.com</string>
+    <string name="default_password">2792327923</string>
+    <string name="account_type_1">I.T Supervisor</string>
+    <string name="account_type_2">I.T Staff</string>
+
+    <!--System Messages -->
+    <string name="double_back_press_msg">Please click back again to exit</string>
+    <string name="view_item_success_msg">Save successful!</string>
+    <string name="view_item_not_success_msg">Some text fields are blank.</string>
+    <string name="reset_password_alert_title">Confirm Password Reset</string>
+    <string name="reset_password_alert_msg">Reset this account\'s password?</string>
+    <string name="reset_password_success_msg">Password Reset!</string>
+    <string name="reset_password_not_success_msg">Password not Reset!</string>
+    <string name="delete_account_alert_title">Confirm Account Deletion</string>
+    <string name="delete_account_alert_msg">Delete this account?</string>
+    <string name="delete_account_success_msg">Account Deleted!</string>
+    <string name="delete_account_not_success_msg">Account not deleted!</string>
+    <string name="add_account_notification_title">Notification</string>
+    <string name="add_account_notification_msg">Email Sent to </string>
+    <string name="add_account_success_msg">Sent!</string>
+    <string name="add_account_not_success_msg">No Email Specified!</string>
+
+    <!--System Web Service Information -->
+    <string name="URL">http://192.168.0.14:9997/ws/service</string>
+    <string name="SOAP_ACTION"> </string>
+    <string name="NAMESPACE">http://aims.webservice/</string>
+</resources>

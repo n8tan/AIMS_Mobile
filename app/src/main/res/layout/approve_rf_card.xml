@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_rf_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:background="#f9f9f9">
+
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#dd4b39"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:layout_alignBaseline="@+id/btn_approve"
+            android:layout_alignBottom="@+id/btn_approve"
+            android:layout_toLeftOf="@+id/btn_view_rf"
+            android:layout_toStartOf="@+id/btn_view_rf"
+            android:paddingLeft="10px"/>
+
+        <Button
+            android:id="@+id/btn_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00a65a"
+            android:text="Approve"
+            android:textAllCaps="false"
+            android:layout_marginBottom="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_view_rf"
+            android:layout_toEndOf="@+id/btn_view_rf"
+            android:paddingRight="10px"/>
+
+        <TextView
+            android:id="@+id/rf_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="USER"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/btn_reject"
+            android:layout_alignStart="@+id/btn_reject"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+
+        <TextView
+            android:id="@+id/rf_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rf_user"
+            android:layout_alignBottom="@+id/rf_user"
+            android:layout_alignEnd="@+id/btn_approve"
+            android:layout_alignRight="@+id/btn_approve"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:text="DATE"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_view_rf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rf_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="View RF Form" />
+
+        <TextView
+            android:id="@+id/rf_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rf_date"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

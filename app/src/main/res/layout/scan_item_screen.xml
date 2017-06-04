@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149dp"
+        android:text="Scan Item"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lblScanItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Enter barcode number below:"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_below="@+id/btn_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp" />
+
+    <EditText
+        android:id="@+id/scanItemBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_below="@+id/lblScanItem"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanItemBarcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Send Barcode ID" />
+</RelativeLayout>

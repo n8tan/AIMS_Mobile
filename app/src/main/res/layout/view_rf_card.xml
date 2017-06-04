@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <!--The TextViews are within the RelativeLayout tag to prevent all the TextViews
+        from compressing each other.-->
+
+    <RelativeLayout
+        android:id="@+id/item_card"
+        android:layout_width="match_parent"
+        android:layout_height="129dp">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="Item Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/itemQty"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/itemName"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/itemName"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="Item Quantity"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/lblItemName"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="Item Name:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/lblItemQty"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="Item Quantity:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <!--include tag holds the other text views
+    <include layout="@layout/expand_card_layout"/>
+    -->
