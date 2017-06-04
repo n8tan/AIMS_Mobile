@@ -79,7 +79,7 @@ public class EditItemActivity extends AppCompatActivity {
         ListCreator lc = new ListCreator(this);
         ArrayList<String> categoryList = lc.createCategoryList(3);
         spinnerAdapter = new ArrayAdapter<String>(
-                    this, android.R.layout.simple_spinner_item,
+                    this, android.R.layout.simple_spinner_dropdown_item,
                     categoryList);
 
 
